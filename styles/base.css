@@ -33,10 +33,6 @@ header {
     padding-top: 15px;
 }
 
-span {
-    display: block;
-}
-
 nav {
     display: flex;
     background-color: var(--secondary-color);
@@ -97,6 +93,7 @@ ul {
 h2 {
     text-align: center;
     background-color: var(--primary-color);
+    color: white;
     grid-column: span 3;
     padding: 5px;
 }
@@ -145,6 +142,7 @@ footer {
     grid-row: 3;
     grid-column: span 2;
     background-color: var(--primary-color);
+    color: white;
     text-align: center;
 }
 
