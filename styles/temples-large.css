@@ -1,0 +1,34 @@
+
+@media (min-width: 600px) {
+  .temple-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .temple-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    display: none; /* hide menu by default in mobile */
+    flex-direction: column;
+    background-color: #444;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;   /* below header */
+    right: 0;    /* anchored to right side */
+    width: 200px;
+  }
+
+  nav ul.show {
+    display: flex; /* show when toggled */
+  }
+
+  .hamburger {
+    display: block; /* show hamburger button in mobile */
+    margin-left: auto;
+  }
+}
