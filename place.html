@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Zealand</title>
+  <meta name="description" content="Weather and data overview for New Zealand">
+  <meta name="author" content="Max Tidwell">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title">New Zealand</h1>
+    <div class="meta">Island Nation • Pacific Realm</div>
+  </header>
+
+  <main class="page">
+    <!-- Responsive hero image using WebP and srcset -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/zealand-small.webp" type="image/webp" media="(max-width: 599px)">
+        <img src="images/zealand-large.webp" alt="Scenic view of New Zealand landscape">
+      </picture>
+      <span class="badge">Featured</span>
+    </section>
+
+    <!-- Data section -->
+    <section class="card data">
+      <div class="card-header"><span class="card-title">Data</span></div>
+      <div class="card-body">
+        <div class="kv-list">
+          <div class="kv-row"><span class="kv-label">Population</span><span class="kv-value">5,311,100</span></div>
+          <div class="kv-row"><span class="kv-label">Area</span><span class="kv-value">103,483 sq mi</span></div>
+          <div class="kv-row"><span class="kv-label">Capital</span><span class="kv-value">Wellington</span></div>
+          <div class="kv-row"><span class="kv-label">Languages</span><span class="kv-value">English, Māori</span></div>
+          <div class="kv-row"><span class="kv-label">Currency</span><span class="kv-value">NZ Dollar</span></div>
+          <div class="kv-row"><span class="kv-label">Timezone</span><span class="kv-value pill">UTC +12</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weather section -->
+    <section class="card weather">
+      <div class="card-header">
+        <span class="card-title">Weather</span>
+        <img class="weather-icon-mobile" src="images/partly-sunny.svg" alt="Partly sunny icon">
+      </div>
+      <div class="card-body">
+        <div class="weather-top">
+          <div class="weather-thumb">
+            <img src="images/partly-sunny.svg" alt="Weather thumbnail">
+          </div>
+          <div class="weather-meta">
+            <div class="summary">Partly sunny</div>
+            <div class="sub">Mild coastal breeze</div>
+          </div>
+        </div>
+
+        <div class="kv-list">
+          <div class="kv-row">
+            <span class="kv-label">Temperature</span>
+            <span class="kv-value"><span id="temperature">67</span> °F</span>
+          </div>
+          <div class="kv-row">
+            <span class="kv-label">Wind</span>
+            <span class="kv-value"><span id="wind">13</span> mph</span>
+          </div>
+          <div class="kv-row">
+            <span class="kv-label">Wind Chill</span>
+            <span class="kv-value"><span id="windchill">N/A</span> °F</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="left">© <span id="currentYear"></span> • Max Tidwell • Utah</div>
+      <div class="right">Last modified: <span id="lastModified"></span></div>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Global reset and margins */
+* {
+  margin: 0 5% 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: green;
+  color: #fff;
+  padding: 20px;
+  border-bottom: 15px solid rgb(64, 73, 63);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Hero image */
+.hero {
+  margin: 0;
+  width: 100%;
+  display: block;
+  border-bottom: 5px solid rgb(64, 73, 63);
+}
+
+/* Data and Weather sections */
+.data,
+.weather {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid gray;
+  margin: 10px auto;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  padding: 15px;
+  color: green;
+}
+
+img {
+  width: 100%;
+}
+
+/* Weather icon adjustments */
+.weather-icon-mobile {
+  width: 40px;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: green;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-top: 10px solid rgb(64, 73, 63);
+  margin-top: 20px;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .data,
+  .weather {
+    margin: 0;
+  }
+
+  /* Add ⛅ after Weather heading in larger view */
+  .weather h2::after {
+    content: " ⛅";
+    font-size: 1.2rem;
+  }
+
+  .weather-icon-mobile {
+    display: none;
+  }
+}
