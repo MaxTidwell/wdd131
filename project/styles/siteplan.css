@@ -1,0 +1,142 @@
+:root {
+  --brand: #0B6E4F;
+  --accent: #FFB703;
+  --text: #1F2937;
+  --bg: #F7FAFC;
+  --muted: #E5E7EB;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+header.site-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid var(--muted);
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--brand), #3AA17E);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+.site-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.75rem;
+  color: var(--brand);
+  margin: 0;
+}
+
+.site-subtitle {
+  margin: 4px 0 0;
+  color: #4B5563;
+  font-size: 0.95rem;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--brand);
+  margin-top: 28px;
+  margin-bottom: 8px;
+  font-size: 1.35rem;
+}
+
+p {
+  line-height: 1.6;
+  margin: 10px 0 14px;
+}
+
+ul {
+  margin: 10px 0 18px;
+  padding-left: 18px;
+}
+
+li { margin: 6px 0; }
+
+.callout {
+  background: #fff;
+  border: 1px solid var(--muted);
+  border-left: 4px solid var(--accent);
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+
+.legend {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.swatch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #D1D5DB;
+}
+
+.dot.brand { background: var(--brand); }
+.dot.accent { background: var(--accent); }
+.dot.text { background: var(--text); }
+.dot.bg { background: var(--bg); }
+
+.wireframes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 860px) {
+  .wireframes { grid-template-columns: 1fr 1fr; }
+}
+
+.frame {
+  background: #fff;
+  border: 2px dashed var(--brand);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.frame h3 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--brand);
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.box {
+  border: 1px solid var(--muted);
+  border-radius: 8px;
+  margin: 8px 0;
+  padding: 8px;
+  background: #FAFAFA;
+  display: grid;
+  place-items: center;
+  color: #374151;
+  font-size: 0.9rem;
+}
