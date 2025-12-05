@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Max Tidwell">
+    <meta name="description" content="A form to review products and post them to the seller">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <form method="get" action="review.html" class="form">
+        <fieldset>
+            <label>Product Name
+                <select name="product">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="software">S</option>
+                        <option value="creative">C</option>
+                        <option value="info">I</option>
+                        <option value="data">D</option>
+                        <option value="construction">C</option>
+                    </select>
+            </label>
+        </fieldset>
+
+        <fieldset>Overall Rating</fieldset>
+
+        <fieldset>
+            <label>Installation Date <input type="date" name="installDate" required></label>
+
+            <div>Which features did you find useful in the product? (Check all that apply)</div>
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="usability" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" value="yes">Design</label>
+
+            <label>Written Review (optional) <input type="text" name="textbox"></label>
+
+            <label>Your Name (optional) <input type="text" name="name"></label>
+        </fieldset>
+
+        <button>Review the Product!</button>
+    </form>
+
+    <footer>
+        <p> &copy; <span id="currentYear"></span> | Max Tidwell | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
