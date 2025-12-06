@@ -23,7 +23,7 @@ header {
 
 header h1 {
     font-size: 2rem;
-    color: #e2e2e2;
+    color: #ffffff;
 }
 
 /* Form container */
@@ -72,13 +72,19 @@ fieldset > div {
     font-weight: 500;
 }
 
+.radio {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
 /* Button styling */
 button {
     display: block;
     width: 100%;
     padding: 20px;
-    background-color: #3842fe;
-    color: white;
+    background-color: #1b24d3;
+    color: #ffffff;
     font-size: 1.3rem;
     border: none;
     border-radius: 8px;
@@ -86,7 +92,7 @@ button {
 }
 
 button:hover {
-  background-color: #3024dc;
+  background-color: #2117b0;
 }
 
 /* Footer */
@@ -98,6 +104,26 @@ footer {
     max-width: 700px;
 }
 
-footer p{
-    color: #e2e2e2;
+footer p {
+    color: #ffffff;
+}
+
+
+/* mobile view */
+@media (max-width: 600px) {
+    body{
+        padding: 1rem;
+    }
+    
+    form.form {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
 }
