@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Style of Armor</title>
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-small.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Submit a Style of Armor</h1>
+        <nav>
+            <a href="index.html">Overview</a>
+            <a href="development.html">Development</a>
+            <a href="parts.html">Parts of Armor</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>If you know of a medieval armor style not listed on our site, please share it below!</p>
+
+        <div class="form">
+            <fieldset id="armorForm">
+                <label>Armor Name:
+                    <input type="text" id="armorName" name="armorName" required>
+                </label><br>
+
+                <label>Description:</label><br>
+                    <textarea id="armorDesc" name="armorDesc" rows="4" required></textarea>
+                </label><br>
+
+                <label>Image URL (optional):
+                    <input type="url" id="armorImage" name="armorImage" placeholder="http://example.com/image.jpg">
+                </label><br>
+                
+                <button type="submit">Add a Style!</button>
+            </fieldset>
+        </div>
+
+        <h2>Submitted Styles</h2>
+        <ul id="submittedList"></ul>
+    </main>
+
+    <footer>
+        <p> &copy; <span id="currentYear"></span> | Max Tidwell | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

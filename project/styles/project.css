@@ -1,0 +1,161 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333333;
+}
+/* Header */
+header {
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #005c11;
+}
+
+/* Navigation bar inside header */
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #690000;
+  padding: 15px;
+}
+
+header nav a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Images */
+img {
+  max-width: 90%;
+  height: auto;
+  border: 2px solid #333;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Lists */
+ul {
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+/* footer */
+footer {
+  background-color: #005c11;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Armor Grid */
+.armor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.armor-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.armor-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.armor-card h3 {
+  margin-top: 10px;
+  font-size: 1.1em;
+}
+
+.armor-card button {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.armor-card button:hover {
+    background-color:#690000;
+    color: #eee;
+}
+
+/* Form Link */
+.form-button {
+    width: 75%;
+    padding: 20px;
+    margin: 15px auto;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #690000;
+    color: #eee;
+}
+
+.form-button a {
+    text-decoration: none;
+    color: #eee;
+}
+
+/* Form */
+
+.form {
+    display: block;
+    width: 50%;
+    min-width: 350px;
+}
+
+.form input[type="text"],
+.form input[type="url"],
+.form textarea {
+    width: 90%;
+    padding: 0.6rem;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    appearance: none;
+}
+
+.form button {
+    display: block;
+    width: 50%;
+    padding: 20px;
+    background-color: #690000;
+    color: #ffffff;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;  
+}
+
+.form button:hover {
+  background-color: #4d0000;
+}
